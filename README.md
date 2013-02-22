@@ -28,7 +28,7 @@
 
 01/25 :: Class number 3 Lecture --<link>--  http://j.mp/10Qd0KY
 
-
+Link to lectures... => http://vcc-dig1108.github.com    
 
 
 
