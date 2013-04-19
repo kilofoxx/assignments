@@ -26,9 +26,12 @@
 
 ##class lectures <links>
 
+Link to lectures... => http://vcc-dig1108.github.com 
+
 01/25 :: Class number 3 Lecture --<link>--  http://j.mp/10Qd0KY
 
-Link to lectures... => http://vcc-dig1108.github.com    
+02/22 :: Lecture... http://j.mp/WeHnV4
 
+03/28 :: http://j.mp/10Z10oUs
 
 
