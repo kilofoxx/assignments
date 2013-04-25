@@ -29,3 +29,9 @@ function subtraction($a, $b)
     if ( $a == +1 and $b == +0 ) return +1;
 
     if ( $a == -1 and $b == +1 ) return -2;
+}
+
+{ // subtraction()
+    test('subtraction(-1, +1) === -2');
+    test('subtraction(-1, -1) === +0');
+    test('subtraction(-1, +0) === -1');
