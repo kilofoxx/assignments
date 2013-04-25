@@ -32,6 +32,4 @@ function subtraction($a, $b)
 }
 
 { // subtraction()
-    test('subtraction(-1, +1) === -2');
-    test('subtraction(-1, -1) === +0');
-    test('subtraction(-1, +0) === -1');
+    test('subtraction(-1, +1) === -2')
