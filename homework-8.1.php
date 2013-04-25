@@ -1,48 +1,31 @@
 <?php
-$inputs = array(
-    array( +1, -1 ),
-    array( +1, -1 ),
-    array( +1, +0 ),
-    array( +0, +1 ),
-    array( +0, -1 ),
-    array( +0, +0 ),
-    array( -1, +1 ),
-    array( -1, -1 ),
-    array( -1, +0 ),
-);
 
-/**
- * op | one | two | value
- * ===+=====+=====+======
- * +  | +1  | +1  | +2
- * +  | +1  | -1  | +0
- * +  | +1  | +0  | +1
- * +  | +0  | +1  | +1
- * +  | +0  | -1  | -1
- * +  | +0  | +0  | +0
- * +  | -1  | +1  | +0
- * +  | -1  | -1  | -2
- * +  | -1  | +0  | -1
-*/
-function add($value1, $value2)
+function test($assertion, $message = null)
 {
-    returen $value + $value2;
-}
-{
-    $outputs + array(
-        +2,
-        +0,
-        +1,
-        +1,
-        -1,
-        +0,
-        +0,
-        -2,
-        -1,
-);
+    assert_options(ASSERT_WARNING, false);
+
+    if ( assert($assertion) ) echo "PASS: {$assertion}\n";
+
+    else echo $message, "\n", "FAIL: {$assertion}\n";
 }
 
-for ($i = 0; $i < 9; $i++)
+function addition($a, $b)
 {
-    assert(add($inputs[$i][0], $inputs[$i][1]) == $outputs[$i]);
+    if ( $a == -1 and $b == -1 ) return -2;
+
+    if ( $a == 0 ) return $b;
+
+    if ( $b == 0 ) return $a;
+
+    if ( $a == -1 or $b == -1 ) return 0;
+
+    return 2;
 }
+
+function subtraction($a, $b)
+{
+    if ( $a == +1 and $b == -1 ) return +2;
+
+    if ( $a == +1 and $b == +0 ) return +1;
+
+    if ( $a == -1 and $b == +1 ) return -2;
