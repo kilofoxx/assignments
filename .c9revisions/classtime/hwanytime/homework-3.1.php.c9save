@@ -1,0 +1,78 @@
+{"ts":1359154474105,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"```php\n \nfunction aa(){\n  $args = func_get_args();\n  if(count($args)%2 != 0)\n    return false;\n  \n  $ret = array();\n  for($i = 0; $i < count($args)/2; $i++){\n    $ret[$args[$i]] = $args[$i+1];\n  }\n  return $ret;\n}\nfunction array_delete(&$ary, $key){\n  if(!isset($ary[$key]))\n    return null;\n  $val = $ary[$key];\n  unset($ary[$key]);\n  return $val;\n}\n``` \n\n```php\n/**\n * choice first non-null object from array \n */\nfunction array_choice(){\n  $args = func_get_args();\n  if(is_array($args[0]))\n    $args = $args[0];\n  foreach($args as $v){\n    if($v != null)\n      return $v;\n  }\n  return false;\n}\n\n```"]],"start1":0,"start2":0,"length1":0,"length2":601}]],"length":601}
+{"contributors":[],"silentsave":true,"ts":1359154483998,"patch":[[{"diffs":[[1,"\n\n\n\n"],[0,"```php\n \nfun"]],"start1":0,"start2":0,"length1":12,"length2":16}]],"length":605,"saved":false}
+{"ts":1359154489037,"patch":[[{"diffs":[[1,"##k"],[0,"\n\n\n\n```p"]],"start1":0,"start2":0,"length1":8,"length2":11}]],"length":608,"saved":false}
+{"ts":1359154490126,"patch":[[{"diffs":[[0,"##"],[-1,"k"],[0,"\n\n\n\n```p"]],"start1":0,"start2":0,"length1":11,"length2":10}]],"length":607,"saved":false}
+{"ts":1359154490626,"patch":[[{"diffs":[[-1,"#"],[0,"#\n\n\n\n```"]],"start1":0,"start2":0,"length1":9,"length2":8}]],"length":606,"saved":false}
+{"ts":1359154491723,"patch":[[{"diffs":[[-1,"#"],[0,"\n\n\n\n"]],"start1":0,"start2":0,"length1":5,"length2":4}]],"length":605,"saved":false}
+{"ts":1359154495508,"patch":[[{"diffs":[[1,"// "],[0,"\n\n\n\n```p"]],"start1":0,"start2":0,"length1":8,"length2":11}]],"length":608,"saved":false}
+{"ts":1359154498009,"patch":[[{"diffs":[[0,"// "],[1,"this"],[0,"\n\n\n\n```p"]],"start1":0,"start2":0,"length1":11,"length2":15}]],"length":612,"saved":false}
+{"ts":1359154500317,"patch":[[{"diffs":[[0,"// this"],[1," is the "],[0,"\n\n\n\n```p"]],"start1":0,"start2":0,"length1":15,"length2":23}]],"length":620,"saved":false}
+{"ts":1359154502162,"patch":[[{"diffs":[[0," is the "],[1,"inita"],[0,"\n\n\n\n```p"]],"start1":7,"start2":7,"length1":16,"length2":21}]],"length":625,"saved":false}
+{"ts":1359154502863,"patch":[[{"diffs":[[0,"he inita"],[1,"l "],[0,"\n\n\n\n```p"]],"start1":12,"start2":12,"length1":16,"length2":18}]],"length":627,"saved":false}
+{"ts":1359154505516,"patch":[[{"diffs":[[0," inital "],[1,"co"],[0,"\n\n\n\n```p"]],"start1":14,"start2":14,"length1":16,"length2":18}]],"length":629,"saved":false}
+{"ts":1359154507207,"patch":[[{"diffs":[[0,"nital co"],[1,"py p"],[0,"\n\n\n\n```p"]],"start1":16,"start2":16,"length1":16,"length2":20}]],"length":633,"saved":false}
+{"ts":1359154508865,"patch":[[{"diffs":[[0,"l copy p"],[1,"ast f"],[0,"\n\n\n\n```p"]],"start1":20,"start2":20,"length1":16,"length2":21}]],"length":638,"saved":false}
+{"ts":1359154510043,"patch":[[{"diffs":[[0,"y past f"],[1,"o"],[0,"\n\n\n\n```p"]],"start1":25,"start2":25,"length1":16,"length2":17}]],"length":639,"saved":false}
+{"ts":1359154511310,"patch":[[{"diffs":[[0,"py past "],[-1,"fo"],[0,"\n\n\n\n```p"]],"start1":24,"start2":24,"length1":18,"length2":16}]],"length":637,"saved":false}
+{"ts":1359154514991,"patch":[[{"diffs":[[0,"py past "],[1,"from the code"],[0,"\n\n\n\n```p"]],"start1":24,"start2":24,"length1":16,"length2":29}]],"length":650,"saved":false}
+{"ts":1359154521800,"patch":[[{"diffs":[[0,"the code"],[1," I selected in "],[0,"\n\n\n\n```p"]],"start1":37,"start2":37,"length1":16,"length2":31}]],"length":665,"saved":false}
+{"ts":1359154523262,"patch":[[{"diffs":[[0,"ted "],[-1,"in "],[0,"\n\n\n\n"]],"start1":53,"start2":53,"length1":11,"length2":8}]],"length":662,"saved":false}
+{"ts":1359154526107,"patch":[[{"diffs":[[0,"elected "],[1,"while in cla"],[0,"\n\n\n\n```p"]],"start1":49,"start2":49,"length1":16,"length2":28}]],"length":674,"saved":false}
+{"ts":1359154527286,"patch":[[{"diffs":[[0,"e in cla"],[1,"ss"],[0,"\n\n\n\n```p"]],"start1":61,"start2":61,"length1":16,"length2":18}]],"length":676,"saved":false}
+{"ts":1359154528354,"patch":[[{"diffs":[[0,"in class"],[1,"."],[0,"\n\n\n\n```p"]],"start1":63,"start2":63,"length1":16,"length2":17}]],"length":677,"saved":false}
+{"ts":1359154534375,"patch":[[{"diffs":[[0,"ass.\n\n\n\n"],[1,"\n"],[0,"```php\n "]],"start1":68,"start2":68,"length1":16,"length2":17}]],"length":678,"saved":false}
+{"ts":1359154538066,"patch":[[{"diffs":[[1,"\n\n"],[0,"// this "]],"start1":0,"start2":0,"length1":8,"length2":10}]],"length":680,"saved":false}
+{"ts":1359154540821,"patch":[[{"diffs":[[1,"//"],[0,"\n\n// thi"]],"start1":0,"start2":0,"length1":8,"length2":10}]],"length":682,"saved":false}
+{"ts":1359154545025,"patch":[[{"diffs":[[0,"//"],[1," home"],[0,"\n\n// thi"]],"start1":0,"start2":0,"length1":10,"length2":15}]],"length":687,"saved":false}
+{"ts":1359154546790,"patch":[[{"diffs":[[0,"// home"],[1,"work"],[0,"\n\n// thi"]],"start1":0,"start2":0,"length1":15,"length2":19}]],"length":691,"saved":false}
+{"ts":1359154548910,"patch":[[{"diffs":[[0,"homework"],[1,"-2"],[0,"\n\n// thi"]],"start1":3,"start2":3,"length1":16,"length2":18}]],"length":693,"saved":false}
+{"ts":1359154549495,"patch":[[{"diffs":[[0,"mework-2"],[1,"."],[0,"\n\n// thi"]],"start1":5,"start2":5,"length1":16,"length2":17}]],"length":694,"saved":false}
+{"ts":1359154550435,"patch":[[{"diffs":[[0,"ework-2."],[1,"1"],[0,"\n\n// thi"]],"start1":6,"start2":6,"length1":16,"length2":17}]],"length":695,"saved":false}
+{"ts":1359154552945,"patch":[[{"diffs":[[0,"work-2.1"],[1,".m"],[0,"\n\n// thi"]],"start1":7,"start2":7,"length1":16,"length2":18}]],"length":697,"saved":false}
+{"ts":1359154554098,"patch":[[{"diffs":[[0,"rk-2.1.m"],[1,"d"],[0,"\n\n// thi"]],"start1":9,"start2":9,"length1":16,"length2":17}]],"length":698,"saved":false}
+{"ts":1359154555054,"patch":[[{"diffs":[[0,"k-2.1.md"],[1,"\nK"],[0,"\n\n// thi"]],"start1":10,"start2":10,"length1":16,"length2":18}]],"length":700,"saved":false}
+{"ts":1359154556036,"patch":[[{"diffs":[[0,".md\n"],[-1,"K"],[1,"/"],[0,"\n\n//"]],"start1":15,"start2":15,"length1":9,"length2":9}]],"length":700,"saved":false}
+{"ts":1359154557751,"patch":[[{"diffs":[[0,"2.1.md\n/"],[1,"/karl"],[0,"\n\n// thi"]],"start1":12,"start2":12,"length1":16,"length2":21}]],"length":705,"saved":false}
+{"ts":1359154560644,"patch":[[{"diffs":[[0,"d\n//"],[1," "],[0,"karl"],[1,"fo"],[0,"\n\n//"]],"start1":17,"start2":17,"length1":12,"length2":15}]],"length":708,"saved":false}
+{"ts":1359154561837,"patch":[[{"diffs":[[0,"/ karlfo"],[1,"rtenb"],[0,"\n\n// thi"]],"start1":20,"start2":20,"length1":16,"length2":21}]],"length":713,"saved":false}
+{"ts":1359154563294,"patch":[[{"diffs":[[0,"lfortenb"],[1,"erry"],[0,"\n\n// thi"]],"start1":25,"start2":25,"length1":16,"length2":20}]],"length":717,"saved":false}
+{"ts":1359154566701,"patch":[[{"diffs":[[0,"lfor"],[-1,"tenberry"],[0,"\n\n//"]],"start1":25,"start2":25,"length1":16,"length2":8}]],"length":709,"saved":false}
+{"ts":1359154568021,"patch":[[{"diffs":[[0," karlfor"],[1,"tenber"],[0,"\n\n// thi"]],"start1":21,"start2":21,"length1":16,"length2":22}]],"length":715,"saved":false}
+{"ts":1359154569765,"patch":[[{"diffs":[[0,"ortenber"],[1,"ry\n"],[0,"\n\n// thi"]],"start1":27,"start2":27,"length1":16,"length2":19}]],"length":718,"saved":false}
+{"ts":1359154574613,"patch":[[{"diffs":[[0,"enberry\n"],[1,"// "],[0,"\n\n// thi"]],"start1":30,"start2":30,"length1":16,"length2":19}]],"length":721,"saved":false}
+{"ts":1359154575123,"patch":[[{"diffs":[[0,"erry\n// "],[1,"ki"],[0,"\n\n// thi"]],"start1":33,"start2":33,"length1":16,"length2":18}]],"length":723,"saved":false}
+{"ts":1359154577124,"patch":[[{"diffs":[[0,"ry\n// ki"],[1,"lofoxx"],[0,"\n\n// thi"]],"start1":35,"start2":35,"length1":16,"length2":22}]],"length":729,"saved":false}
+{"ts":1359154579867,"patch":[[{"diffs":[[0,"kilofoxx"],[1,"@gmail.com"],[0,"\n\n// thi"]],"start1":41,"start2":41,"length1":16,"length2":26}]],"length":739,"saved":false}
+{"ts":1359154580878,"patch":[[{"diffs":[[0,"il.com\n\n"],[1,"\n"],[0,"// this "]],"start1":53,"start2":53,"length1":16,"length2":17}]],"length":740,"saved":false}
+{"ts":1359154582059,"patch":[[{"diffs":[[0,"ail.com\n"],[1,"//"],[0,"\n\n// thi"]],"start1":52,"start2":52,"length1":16,"length2":18}]],"length":742,"saved":false}
+{"ts":1359154583943,"patch":[[{"diffs":[[0,"l.com\n//"],[1," "],[0,"\n\n// thi"]],"start1":54,"start2":54,"length1":16,"length2":17}]],"length":743,"saved":false}
+{"ts":1359154589074,"patch":[[{"diffs":[[0,".com\n// "],[1,"version"],[0,"\n\n// thi"]],"start1":55,"start2":55,"length1":16,"length2":23}]],"length":750,"saved":false}
+{"ts":1359154591165,"patch":[[{"diffs":[[0,"k-2.1.md"],[1," "],[0,"\n// karl"]],"start1":10,"start2":10,"length1":16,"length2":17}]],"length":751,"saved":false}
+{"ts":1359154592213,"patch":[[{"diffs":[[0,"-2.1.md "],[1,"ve"],[0,"\n// karl"]],"start1":11,"start2":11,"length1":16,"length2":18}]],"length":753,"saved":false}
+{"ts":1359154593734,"patch":[[{"diffs":[[0,".1.md ve"],[1,"rsion"],[0,"\n// karl"]],"start1":13,"start2":13,"length1":16,"length2":21}]],"length":758,"saved":false}
+{"ts":1359154594993,"patch":[[{"diffs":[[0," version"],[1," 1"],[0,"\n// karl"]],"start1":18,"start2":18,"length1":16,"length2":18}]],"length":760,"saved":false}
+{"ts":1359154603412,"patch":[[{"diffs":[[0,".com\n// "],[-1,"version"],[0,"\n\n// thi"]],"start1":65,"start2":65,"length1":23,"length2":16}]],"length":753,"saved":false}
+{"ts":1359154607333,"patch":[[{"diffs":[[0,"k-2.1.md"],[-1," "],[1,"\n"],[0,"version "]],"start1":10,"start2":10,"length1":17,"length2":17}]],"length":753,"saved":false}
+{"ts":1359154609580,"patch":[[{"diffs":[[0,"-2.1.md\n"],[1,"// "],[0,"version "]],"start1":11,"start2":11,"length1":16,"length2":19}]],"length":756,"saved":false}
+{"ts":1359154618164,"patch":[[{"diffs":[[0,".com\n// "],[1,"Janu"],[0,"\n\n// thi"]],"start1":68,"start2":68,"length1":16,"length2":20}]],"length":760,"saved":false}
+{"ts":1359154618975,"patch":[[{"diffs":[[0,"\n// Janu"],[1,"a"],[0,"\n\n// thi"]],"start1":72,"start2":72,"length1":16,"length2":17}]],"length":761,"saved":false}
+{"ts":1359154620069,"patch":[[{"diffs":[[0,"// Janua"],[1,"ry"],[0,"\n\n// thi"]],"start1":73,"start2":73,"length1":16,"length2":18}]],"length":763,"saved":false}
+{"ts":1359154622833,"patch":[[{"diffs":[[0," January"],[1," "],[0,"\n\n// thi"]],"start1":75,"start2":75,"length1":16,"length2":17}]],"length":764,"saved":false}
+{"ts":1359154625172,"patch":[[{"diffs":[[0,"January "],[1,"25"],[0,"\n\n// thi"]],"start1":76,"start2":76,"length1":16,"length2":18}]],"length":766,"saved":false}
+{"ts":1359154630119,"patch":[[{"diffs":[[0,"nuary 25"],[1,".13"],[0,"\n\n// thi"]],"start1":78,"start2":78,"length1":16,"length2":19}]],"length":769,"saved":false}
+{"ts":1359154642504,"patch":[[{"diffs":[[0,"nuary 25"],[-1,"."],[0,"13\n\n// t"]],"start1":78,"start2":78,"length1":17,"length2":16}]],"length":768,"saved":false}
+{"ts":1359154645271,"patch":[[{"diffs":[[0,"nuary 25"],[1,"20"],[0,"13\n\n// t"]],"start1":78,"start2":78,"length1":16,"length2":18}]],"length":770,"saved":false}
+{"ts":1359154648213,"patch":[[{"diffs":[[0,"nuary 25"],[1,"/"],[0,"2013\n\n//"]],"start1":78,"start2":78,"length1":16,"length2":17}]],"length":771,"saved":false}
+{"ts":1359154653388,"patch":[[{"diffs":[[0," January"],[-1," "],[1,"/"],[0,"25/2013\n"]],"start1":75,"start2":75,"length1":17,"length2":17}]],"length":771,"saved":false}
+{"ts":1359154666201,"patch":[[{"diffs":[[0," class.\n"],[-1,"\n\n\n\n"],[0,"```php\n "]],"start1":158,"start2":158,"length1":20,"length2":16}]],"length":767,"saved":false}
+{"ts":1359154673045,"patch":[[{"diffs":[[0,"013\n\n// "],[1,"below"],[0,"this is "]],"start1":88,"start2":88,"length1":16,"length2":21}]],"length":772,"saved":false}
+{"ts":1359154674232,"patch":[[{"diffs":[[0,"// below"],[1," "],[0,"this is "]],"start1":93,"start2":93,"length1":16,"length2":17}]],"length":773,"saved":false}
+{"ts":1359154677395,"patch":[[{"diffs":[[0,"/ below "],[1,"is"],[0,"this is "]],"start1":94,"start2":94,"length1":16,"length2":18}]],"length":775,"saved":false}
+{"ts":1359154680592,"patch":[[{"diffs":[[0,"low "],[-1,"isthis "],[0,"is t"]],"start1":98,"start2":98,"length1":15,"length2":8}]],"length":768,"saved":false}
+{"ts":1359154685821,"patch":[[{"diffs":[[0,"opy past"],[1,"3"],[0," from th"]],"start1":117,"start2":117,"length1":16,"length2":17}]],"length":769,"saved":false}
+{"ts":1359154691109,"patch":[[{"diffs":[[0,"tal copy"],[-1," "],[1,"/"],[0,"past3 fr"]],"start1":112,"start2":112,"length1":17,"length2":17}]],"length":769,"saved":false}
+{"ts":1359154693563,"patch":[[{"diffs":[[0,"opy/past"],[-1,"3"],[0," from th"]],"start1":117,"start2":117,"length1":17,"length2":16}]],"length":768,"saved":false}
+{"ts":1359154695429,"patch":[[{"diffs":[[0,"opy/past"],[1,"e"],[0," from th"]],"start1":117,"start2":117,"length1":16,"length2":17}]],"length":769,"saved":false}
+{"ts":1359154699732,"patch":[[{"diffs":[[0," class.\n"],[1,"\n"],[0,"```php\n "]],"start1":160,"start2":160,"length1":16,"length2":17}]],"length":770,"saved":false}
+{"ts":1359154708111,"patch":[[{"diffs":[[0,"alse;\n}\n\n```"],[1,"\n\n"]],"start1":758,"start2":758,"length1":12,"length2":14}]],"length":772,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1359158072191,"patch":[[{"diffs":[[0,"013\n"],[-1,"\n// below"],[1,"// Assignment: Find messy code +100 lines. Create homework-3.1.php copy and paste\n// original code then add.commit...  your job should you choose to accept it.\n// To standardize the code a.k.a make it look purrrdy.\n\n// below (lines 14-49)"],[0," is "]],"start1":88,"start2":88,"length1":17,"length2":246},{"diffs":[[0,"eturn $v;\n  "],[-1,""],[0,""],[1,"}\n  return false;\n}\n\n```\n\n// This is the edited code...  I have choosen allman style per the lecture.\n\n```php\n \nfunction aa()\n{\n  $args = func_get_args();\n  if(count($args)%2 != 0)\n    return false;\n  \n  $ret = array();\n  for($i = 0; $i < count($args)/2; $i++){\n    $ret[$args[$i]] = $args[$i+1];\n}\n  return $ret;\n}\nfunction array_delete(&$ary, $key)\n{\n  if(!isset($ary[$key]))\n    return null;\n  $val = $ary[$key];\n  unset($ary[$key]);\n  return $val;\n}\n``` \n\n```php\n/**\n * choice first non-null object from array \n */\nfunction array_choice()\n{\n  $args = func_get_args();\n  if(is_array($args[0]))\n    $args = $args[0];\n  foreach($args as $v)\n{\n    if($v != null)\n      return $v;\n"],[0,"}\n  return f"]],"start1":963,"start2":963,"length1":24,"length2":704}]],"length":1681,"saved":false}

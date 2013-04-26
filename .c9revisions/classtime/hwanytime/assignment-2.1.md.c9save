@@ -1,0 +1,12 @@
+{"ts":1358524032823,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1358529448281,"patch":[[{"diffs":[[1,"git remote "]],"start1":0,"start2":0,"length1":0,"length2":11}]],"length":11,"saved":false}
+{"ts":1358529449785,"patch":[[{"diffs":[[0," remote "],[1,"-v"]],"start1":3,"start2":3,"length1":8,"length2":10}]],"length":13,"saved":false}
+{"ts":1358529504423,"patch":[[{"diffs":[[-1,"git remote -v"]],"start1":0,"start2":0,"length1":13,"length2":0}]],"length":0,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1358530395535,"patch":[[{"diffs":[[1,"git r"]],"start1":0,"start2":0,"length1":0,"length2":5}]],"length":5,"saved":false}
+{"ts":1358530398935,"patch":[[{"diffs":[[0,"git r"],[1,"emote -v\ngi"]],"start1":0,"start2":0,"length1":5,"length2":16}]],"length":16,"saved":false}
+{"ts":1358530400754,"patch":[[{"diffs":[[0,"te -v\ngi"],[1,"t "]],"start1":8,"start2":8,"length1":8,"length2":10}]],"length":18,"saved":false}
+{"ts":1358530403255,"patch":[[{"diffs":[[0,"mote -v\ngit "],[1,"merge"]],"start1":6,"start2":6,"length1":12,"length2":17}]],"length":23,"saved":false}
+{"ts":1358530405043,"patch":[[{"diffs":[[0,"it merge"],[1,"\n"]],"start1":15,"start2":15,"length1":8,"length2":9}]],"length":24,"saved":false}
+{"ts":1358530407129,"patch":[[{"diffs":[[0,"t merge\n"],[1,"git"]],"start1":16,"start2":16,"length1":8,"length2":11}]],"length":27,"saved":false}
+{"ts":1358530416363,"patch":[[{"diffs":[[0,"it merge\ngit"],[1," fe"]],"start1":15,"start2":15,"length1":12,"length2":15}]],"length":30,"saved":false}
+{"ts":1358530417667,"patch":[[{"diffs":[[0,"e\ngit fe"],[1,"tch\n"]],"start1":22,"start2":22,"length1":8,"length2":12}]],"length":34,"saved":false}
