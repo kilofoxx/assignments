@@ -38,4 +38,13 @@ function subtraction($a, $b)
 
     test('subtraction(+1, +1) === +0');
     test('subtraction(+1, -1) === +2');
-    test
+    test('subtraction(+1, +0) === +1');
+}
+
+{ // addition()
+    test('addition(+0, +1) == +1');
+    test('addition(+0, -1) == -1');
+    test('addition(+0, +0) == +0');
+
+    test('addition(-1, +1) == +0');
+    test('addition(-1, -1) == -2');
